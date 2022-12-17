@@ -1,0 +1,20 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: ecom-mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: shiva
+      MONGO_INITDB_ROOT_PASSWORD: shiva
+    volumes:
+      - ./mongod.conf:/etc/mongo/mongod.conf
+      - ./data/:/data/db
+      - ./logs/:/var/log/mongo
+    command: mongod -f /etc/mongo/mongod.conf
+

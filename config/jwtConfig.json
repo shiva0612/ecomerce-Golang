@@ -1,0 +1,15 @@
+{
+    "port":"8080",
+    "jwt":{
+        "token_time":60,
+        "refresh_time":60,
+        "token_key":"secret"
+    },
+    "mongo":{
+        "user":"shiva",
+        "psw":"shiva",
+        "auth":"admin",
+        "server":"localhost",
+        "port":"27017"
+        }
+}
