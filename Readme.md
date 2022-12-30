@@ -25,4 +25,4 @@ go run *.go (or) go build . && ./main
 [GIN-debug] POST   /cart/placeorder          --> shiva/controller/ecom.PlaceOrder (2 handlers)
 ```
 
-[ecomerce.gif](Readme_resources/ecomerce.gif)
+![ecomerce.gif](Readme_resources/ecomerce.gif)
