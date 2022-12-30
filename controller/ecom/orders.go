@@ -33,19 +33,3 @@ func PlaceOrder(c *gin.Context) {
 	})
 
 }
-
-/*
-userID from token is fetched
-users.orders and refer order again and give all order details
-*/
-func ViewOrders(c *gin.Context) {
-	userID := c.GetString("user_id")
-
-	orders, err := database.ViewOrders(userID)
-	if err != nil {
-		c.String(http.StatusInternalServerError, "technical error:try later")
-		return
-	}
-
-	c.JSON(http.StatusOK, orders)
-}

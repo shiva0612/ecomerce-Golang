@@ -15,5 +15,4 @@ func EcomRoutes(router *gin.Engine) {
 	router.POST("/cart/view", ecom.ViewCart)
 	router.GET("/cart/checkout", ecom.CheckoutCart)
 	router.POST("/cart/placeorder", ecom.PlaceOrder)
-	router.GET("/orders", ecom.ViewOrders)
 }

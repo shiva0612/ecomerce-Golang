@@ -14,7 +14,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: shiva
     volumes:
       - ./mongod.conf:/etc/mongo/mongod.conf
-      - ./data/:/data/db
-      - ./logs/:/var/log/mongo
+      - ./data:/data/db
+      - ./logs:/var/log/mongo
     command: mongod -f /etc/mongo/mongod.conf
 

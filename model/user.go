@@ -59,10 +59,10 @@ type User_Login struct {
 // tokens are parsed to get claims for every authorized webpage
 // if userclaims are full of fields they will take up mry
 type UserClaims struct {
-	Username string
-	UserID   string
-	UserType string
-	Email    string
-	Phone    string
+	UserID string
+	// Username string
+	// UserType string
+	// Email    string
+	// Phone    string
 	jwt.StandardClaims
 }

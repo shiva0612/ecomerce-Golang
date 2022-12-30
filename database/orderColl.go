@@ -29,7 +29,7 @@ func PlaceOrder(userID string, checkout model.CheckoutCart) (string, error) {
 
 	_, err = orderCOll.InsertOne(context.Background(), newOrder)
 	if err != nil {
-		log.Println("error creating order: ", err.Error())
+		log.Println("error placing your order: ", err.Error())
 		return "", err
 	}
 

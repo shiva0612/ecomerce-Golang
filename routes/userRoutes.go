@@ -14,6 +14,7 @@ func UserRoutes(router *gin.Engine) {
 	router.POST("/deleteme", authenticate.Delete)
 
 	router.GET("/profile", user.Profile)
+	router.GET("/orders", user.ViewOrders)
 	router.POST("/address/add", user.AddAddress)
 	router.GET("address/view", user.GetAddress)
 
